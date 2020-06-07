@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box;
+}
+body-no-negative-margin{
+ margin:10px;
+}
+
+h1{  box-sizing: border-box;
+  color: blue;
+  text-align: center;
+  font-family: sans-serif,"Times New Roman",Ariel;
+  font-weight: bolder;
+  font-size:43px;
+  text-transform: capitalize;
+}
+
+section{
+
+  border: 3px solid black;
+  margin:6px;
+  position:relative;
+  background: grey;
+}
+header{
+  box-sizing: border-box;
+  text-align:center;
+  width:100px;
+  color:white;
+  background: red;
+  font-family: sans-serif,"Times New Roman";
+  font-weight: bolder;
+  font-size:20px;
+  border-left:3px solid black;
+  border-bottom:3px solid black;
+  float:right;
+  clear:both;
+  padding:5px;
+
+
+}
+div{
+
+  padding:5px;
+  margin:5px;
+  clear:right;
+
+}
+.blue{
+  background:blue;
+}
+.maroon{
+  background: maroon;
+}
+/***for dekstop*****/
+@media(min-width:992px)
+{
+  section{
+
+      width:32%;
+      float:left;
+
+  }
+}
+/******for tablet*****/
+@media(max-width:991px) and (min-width:768px)
+{
+  section.two{
+
+      width:47%;
+      float:left;
+      margin-bottom: 10px;
+	  
+  }
+  section.one{
+
+    width:95.3%;
+    clear:left;
+	margin-top:20px;
+
+
+  }
+}
+/*****for mobile******/
+@media(max-width:767px)
+{
+  section{
+
+      margin:5px;
+      margin-bottom: 10px;
+      width:100%;
+  }
+}
